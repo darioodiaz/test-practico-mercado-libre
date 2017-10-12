@@ -1,0 +1,63 @@
+@import "../../variables";
+@import "../../mixins";
+
+.searchBox {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 2;
+}
+
+.searchBox__input {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-style: none;
+    color: $input--color;
+    font-size: $base-font-size;
+    flex-grow: 2;
+    margin-left: 15px;
+    margin-right: 0;
+
+    &:placeholder {
+        @extend .searchBox__input--placeholder;
+    }
+
+    &:focus {
+        @extend .searchBox__input--focused;
+    }
+}
+
+.searchBox__input--focused {
+    @include no-focus-outline;
+}
+
+.searchBox__input--floated {
+    padding-left: 15px;
+}
+
+.searchBox__input--placeholder {
+    color: $input--background-color;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+.searchBox__btn {
+    border-style: none;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &:focus {
+        @extend .searchBox__btn--focused;
+    }
+}
+
+.searchBox__btn--focused {
+    @include no-focus-outline;
+}
+
+.searchBox__btn--appended {
+    margin: 0;
+    padding: 0;
+}

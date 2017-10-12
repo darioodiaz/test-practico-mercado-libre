@@ -1,0 +1,19 @@
+@import '../../variables';
+
+$app-header--background-color: #ffe600 !default;
+
+.app-header {
+    background-color: $app-header--background-color;
+    display: flex;
+    justify-content: center;
+}
+
+.app-header-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+    padding: 10px;
+    width: $page-width;
+}

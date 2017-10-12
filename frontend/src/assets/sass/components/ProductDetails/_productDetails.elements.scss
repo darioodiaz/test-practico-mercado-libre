@@ -1,0 +1,65 @@
+@import "../../variables";
+@import "../../mixins";
+
+.product-details-header__title {
+    font-weight: bold;
+    font-size: 24px;
+    &:first-letter {
+        @extend .product-details-header__title--capitalized;
+    }
+}
+
+.product-details-header__title--capitalized {
+    @include first-letter-capitalized;
+}
+
+.product-details-header__price {
+    margin-top: $heading-lateral-space;
+    margin-bottom: $heading-lateral-space;
+    font-size: 46px;
+    font-weight: normal;
+}
+
+.product-details-header__condition-sold {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+
+    &:first-letter {
+        @extend .product-details-header__condition-sold--capitalized;
+    }
+}
+
+.product-details-header__condition-sold--capitalized {
+    @include first-letter-capitalized;
+}
+
+.product-details-header__btn-buy {
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 3px;
+    background-color: #3483fa;
+    border-color: #3483fa;
+    color: white;
+}
+
+.product-details-footer__title {
+    font-size: 28px;
+    color: $text-color;
+}
+
+.product-details-footer__description {
+    color: $input--background-color;
+    margin: 0;
+    padding: 0;
+    margin-top: $heading-lateral-space;
+    margin-bottom: $heading-lateral-space;
+    font-size: 16px;
+    word-wrap: break-word;
+    line-height: 135%;
+}

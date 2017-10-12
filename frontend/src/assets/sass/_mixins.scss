@@ -1,0 +1,32 @@
+// Setea height de 100% para ocupar toda la pantalla a lo alto
+@mixin full-height {
+    height: 100% !important;
+}
+
+// Quita margin y padding
+@mixin no-margin-and-padding {
+    margin: 0;
+    padding: 0;
+}
+
+// Media query para dispositivos retina, la imagen es opcional ya que es usada solo por los iconos o logos
+@mixin retina-devices($width, $height, $backgroundImage: null) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        height: $height;
+        width: $width;
+
+        @if $backgroundImage {
+            background-image: url($backgroundImage);
+        }
+    }
+}
+
+// Quita el borde al hacer foco
+@mixin no-focus-outline {
+    outline: none;
+}
+
+// Poner la 1ra letra en mayuscula
+@mixin first-letter-capitalized {
+    text-transform: capitalize;
+}

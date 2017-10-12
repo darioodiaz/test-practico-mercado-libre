@@ -1,0 +1,125 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ML",
+		"_postman_id": "99f0ee0b-4011-41f7-9974-46489f271243",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ML Product",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLA646264133",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ML Product Description",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLA646264133/description",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ML Product Currency",
+			"request": {
+				"url": "https://api.mercadolibre.com/currencies/ARS",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ML Query",
+			"request": {
+				"url": {
+					"raw": "https://api.mercadolibre.com/sites/MLA/search?q=zapatilla",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadolibre",
+						"com"
+					],
+					"path": [
+						"sites",
+						"MLA",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "zapatilla",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Item by ID",
+			"request": {
+				"url": "http://localhost:4000/api/items/MLA643307502",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Items by query",
+			"request": {
+				"url": {
+					"raw": "http://localhost:4000/api/items?q=zapatilla",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"items"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "zapatilla",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

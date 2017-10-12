@@ -1,0 +1,6 @@
+@import 'variables';
+
+// Convertir pixeles a unidades em
+@function convert-pixels-to-em($px) {
+    @return $px / $base-font-size * 1em;
+}

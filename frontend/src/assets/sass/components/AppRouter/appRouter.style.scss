@@ -1,0 +1,5 @@
+@import "../../mixins";
+
+#root {
+    @include no-margin-and-padding;
+}

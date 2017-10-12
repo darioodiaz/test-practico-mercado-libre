@@ -1,0 +1,48 @@
+@import "../../mixins";
+@import "../../variables";
+@import "../../base";
+
+.app-container {
+    @include full-height;
+
+    background-color: $background-color;
+}
+
+.app-content {
+    @include full-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url($small-ml-logo);
+    background-repeat: no-repeat;
+    height: $small-ml-logo-height;
+    width: $small-ml-logo-width;
+    text-indent: -9999px;
+    display: inline-block;
+
+    @include retina-devices($big-ml-logo-width, $big-ml-logo-height, $big-ml-logo);
+}
+
+.icon {
+    height: $small-icon-height;
+    width: $small-icon-width;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    @include retina-devices($big-icon-width, $big-icon-height);
+}
+
+.icon--search {
+    content: url($small-search-icon);
+
+    @include retina-devices($big-icon-width, $big-icon-height, $big-search-icon);
+}
+
+.icon--shipping {
+    content: url($small-ship-icon);
+
+    @include retina-devices($big-icon-width, $big-icon-height, $big-ship-icon);
+}

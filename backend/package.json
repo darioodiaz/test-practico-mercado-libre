@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "node index.js",
+    "build": "babel ./server.js --out-file server.bundle.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0"
+  }
+}
