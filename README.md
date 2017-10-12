@@ -62,4 +62,9 @@ Pages: sufijo .page.js
 Estilos Sass: sufijo .style.scss
 Estilos css: sufijo .style.css
 
+## Backend
+
+Apis/Routers: sufijo .router.js
+Rutas: sufijo .route.js
+
 Esta convencion se utilizo para tener una claridad de nombres y facilitar la navegacion y busqueda al momento de depurar desde el navegador
